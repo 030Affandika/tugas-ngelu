@@ -1,0 +1,60 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.welcome {
+    background-color: green;
+    height: 50px;
+}
+
+.navbar {
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Announcement {
+    color: red;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prosesor-container {
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.label {
+    font-size:20px;
+    color: white;
+    margin-left: 30px;
+}
+
+.choice-container{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.tabelharga {
+    margin-left: 100px;
+}
+
+.totalharga {
+    color: white;
+    font-size: 20px;
+    margin-left: 334px;
+}
+
+.judul {
+    color: white;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simulasi Rakit PC</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="logo.png"/>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Welcome -->
+            <div class="welcome">
+                <ul class="welcome-container">
+                    <li class="navbar">
+                        <h3>Selamat Datang Di Suka Rakit.com</h3>
+                    </li>
+                    <li class="navbar">
+                        <h3>Buat PC Impian Anda</h3>
+                    </li>
+                </ul>
+            </div>
+            <!-- Welcome End -->
+
+            <!-- Announcement -->
+            <div>
+                <li class="Announcement">
+                    <h4>
+                        <marquee>!!! Untuk Sementara Simulasi Ini Hanya Bisa Untuk Produk Keluaran Terbaru !!!</marquee>
+                    </h4>
+                </li>
+            </div>
+            <!-- Announcement End -->
+
+            <!-- Content -->
+            <h2 class="judul">Mulai dari sini!</h2>
+                <label class="label">Prosesor</label>
+                <div>
+                    <select id="Prosesor" onchange="price()" class="choice-container" name="Prosesor">
+                        <option value="3150000">AMD Ryzen 7 5900x</option>
+                        <option value="1650000">AMD Ryzen 7 5600x</option>
+                        <option value="2800000">Intel Core i5 12400F</option>
+                        <option value="4700000">Intel Core i7 12700F </option>
+                        <option value="9300000">Intel Core I9 12900F</option>
+                        <option selected="selected">..........Pilih Salah Satu..........</option>
+                      </select>
+                      <input class="tabelharga" type="number" id="hargaprosesor">
+                </div>
+
+                <label class="label">Motherboard</label>
+                <div>
+                    <select id="Motherboard" onchange="price()" class="choice-container" name="Motherboard">
+                        <option value="850000">B550 AM4</option>
+                        <option value="1300000">B450 AM4</option>
+                        <option value="1400000">H410 LGA</option>
+                        <option value="1500000">Motherboard</option>
+                        <option selected="selected">..........Pilih Salah Satu..........</option>
+                      </select>
+    
+                      <input  class="tabelharga" type="number" id="hargamotherboard">
+                </div>
+
+                <label class="label">Ram</label>
+                <div>
+                    <select id="Ram" onchange="price()" class="choice-container" name="Ram">
+                        <option value="200000">2 GB 2666 mhz</option>
+                        <option value="300000">4 GB 2666 mhz</option>
+                        <option value="600000">8 GB 2666 mhz</option>
+                        <option value="120000">16 GB 2666 mhz </option>
+                        <option value="240000">32 GB 2666 mhz</option>
+                        <option  selected="selected">..........Pilih Salah Satu..........</option>
+                      </select>
+                      <input class="tabelharga" type="number" id="hargaram">
+                </div>
+
+
+                <label class="label">Storage</label>
+                <div>
+                    <select id="Storage" onchange="price()" class="choice-container" name="Storage">
+                        <option value="300000">256 GB</option>
+                        <option value="600000">512 GB</option>
+                        <option value="900000">1 TB</option>
+                        <option value="200000">256 GB</option>
+                        <option value="400000">512 GB</option>
+                        <option  selected="selected">..........Pilih Salah Satu..........</option>
+                      </select>
+                      <input class="tabelharga" type="number" id="hargastorage">
+                </div>
+
+                <label class="label">VGA</label>
+                <div>
+                    <select id="VGA" onchange="price()" class="choice-container" name="VGA">
+                        <option value="6000000">RTX 3060</option>
+                        <option value="7500000">RTX 3070</option>
+                        <option value="9000000">RTX 3080</option>
+                        <option value="8000000">RX 6800</option>
+                        <option value="1000000">RX 6900 XT</option>
+                        <option  selected="selected">..........Pilih Salah Satu..........</option>
+                      </select>
+                      <input class="tabelharga" type="number" id="hargavga">
+                </div>
+                
+                <label class="label">Casing</label>
+                <div>
+                    <select id="Casing" onchange="price()" class="choice-container" name="Casing">
+                        <option value="500000">M ITX</option>
+                        <option value="700000">ITX</option>
+                        <option value="550000">M ATX</option>
+                        <option value="800000">ATX</option>
+                        <option  selected="selected">..........Pilih Salah Satu..........</option>
+                      </select>
+                      <input class="tabelharga" type="number" id="hargacasing">
+                </div>
+
+                <label class="label">PSU</label>
+                <div>
+                    <select id="PSU" onchange="price()" class="choice-container" name="PSU">
+                        <option value="500000">400 watt</option>
+                        <option value="600000">500 watt</option>
+                        <option value="800000">600 watt</option>
+                        <option value="1000000">800 watt</option>
+                        <option  selected="selected">..........Pilih Salah Satu..........</option>
+                      </select>
+                      <input class="tabelharga" type="number" id="hargapsu">
+                </div>
+
+                <label class="label">CPU Cooler</label>
+                <div>
+                    <select id="CPUCOOLER" onchange="price()" class="choice-container" name="CPUCOOLER">
+                        <option value="120000">Stock Cooler</option>
+                        <option value="130000">Water Cooler</option>
+                        <option value="140000">Liquid Cooler</option>
+                        <option value="150000">Cooler</option>
+                        <option  selected="selected">..........Pilih Salah Satu..........</option>
+                      </select>
+
+                      <input  class="tabelharga" type="number" id="hargacpucooler">
+                </div>
+
+                <label class="totalharga">Total Harga</label>
+                <div class="totalharga">
+                    <input type="text" id="totalharga" name="totalharga" >
+                </div>
+            </div>
+            <!--  -->
+        </div>
+        <script src="data.js" type="text/javascript" />
+    </body>
+</html>
